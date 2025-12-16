@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>simple word test</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #fafafa;
+      max-width: 640px;
+      margin: 1.5em auto;
+      padding: 1em;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 1.6em;
+      margin-bottom: 0.2em;
+    }
+
+    .note {
+      font-size: 0.9em;
+      color: #666;
+      margin-bottom: 1em;
+    }
+
+    .box {
+      background: white;
+      border-radius: 12px;
+      padding: 1em;
+      margin-bottom: 1em;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+
+    button {
+      font-size: 1.1em;
+      padding: 0.6em 1.2em;
+      border-radius: 10px;
+      border: none;
+      background: #ffd6e8;
+      cursor: pointer;
+      margin: 0.2em 0.2em 0.2em 0;
+    }
+
+    button:active {
+      background: #ffbfdc;
+    }
+
+    #startBtn, #submit {
+      width: 100%;
+      font-size: 1.2em;
+      margin-top: 0.6em;
+    }
+
+    #question {
+      font-size: 1.4em;
+      margin: 0.6em 0;
+    }
+
+    #answer {
+      width: 100%;
+      font-size: 1.1em;
+      padding: 0.5em;
+    }
+
+    #result {
+      margin-top: 0.6em;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+
+    .ac { color: #2e8b57; }
+    .wa { color: #cc3333; }
+    .after { opacity: 0.7; }
+  </style>
+</head>
+<body>
+
+<h1>simple word test</h1>
+<div class="note">
+  モードを選んでからファイルを読み込んでね
+</div>
+
+<div class="box">
+  <label><input type="radio" name="mode" value="word" checked> 意味 → 単語</label>
+  <label><input type="radio" name="mode" value="mean"> 単語 → 意味</label>
+  <label><input type="checkbox" id="shuffle"> シャッフル</label>
+</div>
+
+<div class="box">
+  <div>example</div>
+  <div id="exampleButtons"></div>
+  <hr>
+  <input type="file" id="fileInput">
+  <button id="startBtn">スタート</button>
+</div>
+
+<div class="box">
+  <div id="question">まだ始まっていないのです</div>
+  <input id="answer" disabled>
+  <button id="submit" disabled>OK</button>
+  <div id="result"></div>
+</div>
+
+<div class="box" id="summaryBox" style="display:none;">
+  <h3>result</h3>
+  <div id="summary"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
