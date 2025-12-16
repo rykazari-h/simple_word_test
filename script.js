@@ -126,21 +126,24 @@ function judge() {
     return;
   }
 
-  const input = document.getElementById("answer").value.trim();
+  const input = document.getElementById("answer").value.trim().toLowerCase();
   const answers = pairs[index][1];
   const result = document.getElementById("result");
 
-  if (answers.includes(input)) {
+  const normalizedAnswers = answers.map(a => a.toLowerCase());
+  if (normalizedAnswers.includes(input)) {
     result.textContent = "CA!";
     result.className = "ac";
   } else {
     result.textContent = "WA… 正解: " + answers.join(", ");
     result.className = "wa";
-	mistakes.push({
-    question: pairs[index][0],
-    answers: answers
-  });
+
+    mistakes.push({
+      question: pairs[index][0],
+      answers: answers
+    });
   }
+
 
   document.getElementById("question").className = "after";
   answered = true;
