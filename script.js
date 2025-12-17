@@ -28,7 +28,8 @@ function parseInput(text) {
 }
 
 const examples = [
-  "kikutan_week1-2.txt"
+  "kikutan_week1-2.txt",
+  "simple_ex.txt"
 ];
 
 const exampleBox = document.getElementById("exampleButtons");
