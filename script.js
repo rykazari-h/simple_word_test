@@ -3,8 +3,6 @@ let pairs = [];
 let index = 0;
 let answered = false;
 let mistakes = [];
-
-/* ---------- input parse ---------- */
 function parseInput(text) {
   const mapA = new Map();
   const mapB = new Map();
@@ -29,7 +27,6 @@ function parseInput(text) {
   return { mapA, mapB };
 }
 
-/* ---------- example buttons ---------- */
 const examples = [
   "kikutan_week1-2.txt"
 ];
@@ -43,18 +40,16 @@ examples.forEach(name => {
     const res = await fetch("examples/" + name);
     const text = await res.text();
     data = parseInput(text);
-    alert(`${name} を読み込んだのです`);
+    alert(`${name} を読み込んだよ`);
   };
   exampleBox.appendChild(btn);
 });
 
-/* ---------- start ---------- */
 document.getElementById("startBtn").onclick = () => {
   if (!data) {
     alert("ファイルを読み込んでね");
     return;
   }
-  // 前回の表示をリセット
   document.getElementById("result").textContent = "";
   const summaryBox = document.getElementById("summaryBox");
   if (summaryBox) summaryBox.style.display = "none";
@@ -83,7 +78,6 @@ document.getElementById("startBtn").onclick = () => {
   showQuestion();
 };
 
-/* ---------- question ---------- */
 function showQuestion() {
   if (index >= pairs.length) {
     document.getElementById("question").textContent = "おしまいです";
@@ -113,12 +107,11 @@ function showSummary() {
 
   mistakes.forEach(m => {
     const div = document.createElement("div");
-    div.textContent = `${m.question} → ${m.answers.join(", ")}`;
+	  div.textContent = `${m.question} → ${m.answers.join(", ")};　誤答: ${m.your}`;
     area.appendChild(div);
   });
 }
 
-/* ---------- judge ---------- */
 function judge() {
   if (answered) {
     index++;
@@ -140,6 +133,7 @@ function judge() {
 
     mistakes.push({
       question: pairs[index][0],
+	  your: input,
       answers: answers
     });
   }
@@ -157,7 +151,6 @@ document.getElementById("answer").addEventListener("keydown", e => {
   }
 });
 
-/* ---------- local file ---------- */
 document.getElementById("fileInput").onchange = e => {
   const file = e.target.files[0];
   if (!file) return;
@@ -168,4 +161,3 @@ document.getElementById("fileInput").onchange = e => {
   };
   reader.readAsText(file);
 };
-
