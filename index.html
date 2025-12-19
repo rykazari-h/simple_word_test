@@ -2,6 +2,7 @@
 <html lang="ja">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>simple word test</title>
 		<style>
 body {
@@ -30,6 +31,30 @@ body {
 		padding: 1em;
 		margin-bottom: 1em;
 		box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+	}
+	.linkBtn {
+		display: inline-block;
+		padding: 0.6em 1.2em;
+		background: #F3998B;
+		border-radius: 10px;
+		text-decoration: none;
+		color: #333;
+	}
+	.linkBox {
+		display: flex;
+		align-items: center;
+		gap: 0.8em;
+		flex-wrap: wrap;
+	}
+
+	.links {
+		display: flex;
+		gap: 0.4em;
+	}
+
+	.linkNote {
+		font-size: 0.9em;
+		color: #666;
 	}
 
 	button {
@@ -72,13 +97,45 @@ body {
 	.ac { color: #2e8b57; }
 	.wa { color: #cc3333; }
 	.after { opacity: 0.7; }
+	@media (max-width: 600px) {
+		body {
+			padding: 1.2em;
+		}
+
+		.linkBtn {
+			font-size: 1.1em;
+			padding: 0.8em 1.4em;
+		}
+
+		button {
+			font-size: 1.1em;
+			padding: 0.8em 1.4em;
+		}
+
+		#answer {
+			font-size: 1.2em;
+			padding: 0.7em;
+		}
+	}
+
 		</style>
 	</head>
 	<body>
 
 		<h1>simple word test</h1>
 		<div class="note">
-			正誤判定は大文字小文字を区別しないが、完全一致が必要<br>答えを打ち込んでenterを押せばそのまま受理されます<br>すべて終了すると、結果が表示されます<br>src : https://github.com/rykazari-h/simple_word_test
+			正誤判定は大文字小文字を区別しないが、完全一致が必要<br>答えを打ち込んでenterを押せばそのまま受理されます<br>すべて終了すると、結果が表示されます
+		</div>
+		<div class="box linkBox">
+			<div class="links">
+				<a href="https://github.com/rykazari-h/simple_word_test" target="_blank" class="linkBtn">ソースコード</a>
+
+				<a href="https://github.com/rykazari-h/simple_word_test/blob/main/README.md"
+	   target="_blank" class="linkBtn">ドキュメント</a>
+			</div>
+			<div class="linkNote">
+				困ったとき、問題を作りたいときはここ
+			</div>
 		</div>
 
 		<div class="box">
