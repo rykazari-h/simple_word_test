@@ -1,0 +1,66 @@
+# week 4
+# day 16
+tribe	部族
+population	人工
+genius	天才
+labor	労働
+task	仕事
+copy	一部、一冊\nカンニングする
+source	源、出典
+form	用紙、書式
+character	文字
+word	約束、単語
+logic	論理
+principle	原理
+# day 17
+brilliant	きらめく
+dramatic	劇的な
+emotion	感情
+technique	技術
+audience	聴衆
+role	役割
+deaf	耳が聞こえない
+continue	続く
+imagine	創造する
+conversation	会話
+instead	その代わりに
+remain	〜のままでいる
+# day 18
+ordinary普通の
+profession	職業
+crew	乗組員
+journey	旅
+approach	近づく、言い寄る
+pressure	圧力
+tiny	とても小さい
+error	誤り
+crash	衝突
+surface	表面
+mankind	人類
+spirit	精神
+# day 19
+faith	信頼、信仰
+pray	祈る
+military	軍の
+insist	強く主張する
+order	順序
+lead	導く
+victory	勝利
+jail	拘置所
+soul	魂
+heaven	天国
+general	全体の
+literature	文学
+# day 20
+overcome	克服する
+inspire	奮い立たせる
+pursue	追い求める
+tough	難しい
+wear	擦り切れる
+sufficient	十分な
+housework	家事
+laundry	洗濯物
+vision	視力
+talent	才能
+eventually	結局は
+independent	独立した

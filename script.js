@@ -6,12 +6,23 @@ let mistakes = [];
 let slots = [];
 const examples = [
 	"simple_ex.txt",
-	"kikutan_week1-2.txt"
+	"古文単語読解必修語50.txt",
+	"古文単語入試必修動詞23.txt",
+	"古文単語入試必修形容動詞9.txt",
+	"古文単語入試必修名詞18.txt",
+	"古文単語入試必修副詞19.txt",
+	"古文単語入試必修連語6.txt",
+	"kikutan_week1.txt",
+	"kikutan_week2.txt",
+	"kikutan_week3.txt",
+	"kikutan_week4.txt"
 ];
 const fileCells = document.getElementById("fileCells");
 const addCellBtn = document.getElementById("addCell");
 const removeCellBtn = document.getElementById("removeCell");
 const exampleBox = document.getElementById("exampleButtons");
+const exampleSelect = document.getElementById("exampleSelect");
+const importExampleBtn = document.getElementById("importExampleBtn");
 function parseInput(text) {
 	const mapA = new Map();
 	const mapB = new Map();
@@ -23,8 +34,8 @@ function parseInput(text) {
 		const parts = line.split(/\t+/, 2);
 		if (parts.length < 2) return;
 
-		const a = parts[0].trim();
-		const b = parts[1].trim();
+		const a = parts[0].trim().replace(/\\n/g, "\n");
+		const b = parts[1].trim().replace(/\\n/g, "\n");
 
 		if (!mapA.has(a)) mapA.set(a, []);
 		if (!mapB.has(b)) mapB.set(b, []);
@@ -43,7 +54,7 @@ document.getElementById("startBtn").onclick = async () => {
 		return;
 	}
 	data = parseInput(text);
-	document.getElementById("result").textContent = "";
+	document.getElementById("result").innerText = "";
 	const summaryBox = document.getElementById("summaryBox");
 	if (summaryBox) summaryBox.style.display = "none";
 
@@ -73,17 +84,17 @@ document.getElementById("startBtn").onclick = async () => {
 
 function showQuestion() {
 	if (index >= pairs.length) {
-		document.getElementById("question").textContent = "おしまいです";
+		document.getElementById("question").innerText = "おしまいです";
 		document.getElementById("answer").disabled = true;
 		document.getElementById("submit").disabled = true;
 		showSummary();
 		return;
 	}
 
-	document.getElementById("question").textContent = pairs[index][0];
+	document.getElementById("question").innerText = pairs[index][0];
 	document.getElementById("question").className = "";
 	document.getElementById("answer").value = "";
-	document.getElementById("result").textContent = "";
+	document.getElementById("result").innerText = "";
 	answered = false;
 }
 function showSummary() {
@@ -94,13 +105,13 @@ function showSummary() {
 	area.innerHTML = "";
 
 	if (mistakes.length === 0) {
-		area.textContent = "ぜんぶ正解です！すごいです！";
+		area.innerText = "ぜんぶ正解です！すごいです！";
 		return;
 	}
 
 	mistakes.forEach(m => {
 		const div = document.createElement("div");
-		div.textContent = `${m.question} → ${m.answers.join(", ")};　誤答: ${m.your}`;
+		div.innerText = `${m.question} → ${m.answers.join(", ")};　誤答: ${m.your}`;
 		area.appendChild(div);
 	});
 }
@@ -118,10 +129,10 @@ function judge() {
 
 	const normalizedAnswers = answers.map(a => a.toLowerCase());
 	if (normalizedAnswers.includes(input)) {
-		result.textContent = "CA! " + answers.join(", ");
+		result.innerText = "CA! " + answers.join(", ");
 		result.className = "ac";
 	} else {
-		result.textContent = "WA… " + answers.join(", ");
+		result.innerText = "WA… " + answers.join(", ");
 		result.className = "wa";
 
 		mistakes.push({
@@ -148,7 +159,7 @@ function renderSlots() {
 	slots.forEach((slot, i) => {
 		const div = document.createElement("div");
 		div.className ="file-cell";
-		div.textContent = slot.name ? slot.name : `(空 ${i + 1})`;
+		div.innerText = slot.name ? slot.name : `(空 ${i + 1})`;
 		fileCells.appendChild(div);
 	});
 }
@@ -211,8 +222,15 @@ async function loadSlots() {
 	return texts.join("\n");
 }
 examples.forEach(name => {
-	const btn = document.createElement("button");
-	btn.textContent = name;
-	btn.onclick = () => importEx(name);
-	exampleBox.appendChild(btn);
+	const opt = document.createElement("option");
+	opt.value = name;
+	opt.innerText = name.startsWith(".") ? name : name.replace(/\.[^.]+$/, "");
+	exampleSelect.appendChild(opt);
 });
+
+importExampleBtn.onclick = () => {
+	const name = exampleSelect.value;
+	if (!name) return;
+	importEx(name);
+	exampleSelect.value = "";
+};
