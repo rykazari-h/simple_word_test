@@ -1,66 +1,66 @@
-# week 2
-# day 6
-notice	気がつく
-ability	能力
-encourage	勇気づける
-introduce	紹介する
-willing	いとわない
-publish	出版する
-material	材料
-complete	全部揃った
-signature	署名
-professional	職業の
-even	平らな
-graduate	卒業する
-# day 7
-depend	頼る
-create	創造する
-schedule	予定
-follow	ついていく
-grade	学年
-examination	試験
-comfortable	快適な
-necessary	必要な
-moment	瞬間
-waste	浪費する
-identify	特定する
-ignore	無視する
-# day 8
-observe	観察する
-standard	標準の
-exchange	交換する
-proper	適切な
-habit	習慣
-skill	技能
-greet	あいさつする
-comment	論評
-impress	感銘を与える
-pleasant	心地よい
-avoid	避ける
-excuse	言い訳
-# day 9
-precious	貴重な
-earn	稼ぐ
-spare	予備の
-defend	守る
-doubt	疑う
-praise	称賛
-sympathy	同情
-fail	失敗する
-fault	誤り
-guess	推測する
-silly	愚かな(si~
-last	続く
-# day 10
-recall	思い出す
-argue	議論する
-yell	大声で叫ぶ
-compete	競争する
-crack	ピシャリと叩く
-upset	取り乱した
-dirt	汚れ
-cruel	残酷な
-pass	合格する
-sensitive	敏感な
-gentle	優しい
-grateful	感謝して
+# week 6
+# day 26
+curious	好奇心が強い
+definition	定義
+chemical	科学部室
+billion	10億
+cell	細胞
+frightened	怯えた
+mad	怒って	
+ashamed	恥じて
+manufacture	製造業
+depth	深さ	
+article	記事
+disadvantage　不利
+# day 27
+confidence	信頼
+honor	名誉
+courage	勇気
+relatively	比較的
+anger	怒り
+fair	公平な
+reasonable	理にかなった	
+describe	説明する
+negative	否定的な
+convince	納得させる
+prove	証明する
+determine	明らかにする
+# day 28
+pretend	装う
+mean	意味する
+sign	調光
+regard	見なす
+close	接近した
+desire	望む
+smooth	滑らかな
+admire	感心する
+way	やりかた
+compare	比較する
+likely	しそうな
+respond	反応する
+# day 29
+hate	ひどく嫌う
+express	表現する
+novel	小説
+method	方法
+journal	雑誌
+maintain	維持する
+tool	道具
+paper	新聞
+room	空間
+detail	細部
+recent	最近の
+translate	翻訳する
+# day 30
+situation	状況
+hesitate	ためらう
+bother	困らせる
+encounter	遭遇する
+senior	身分が上の
+luggage	手荷物
+unknown	未知の
+wheel	車輪
+loose	解けている
+slightly	ほんの少し
+nevertheless	それにもかかわらず
+fix	修理する
