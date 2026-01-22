@@ -1,7 +1,7 @@
 # week 4
 # day 16
 tribe	部族
-population	人工
+population	人口
 genius	天才
 labor	労働
 task	仕事
