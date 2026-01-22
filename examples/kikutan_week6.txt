@@ -2,7 +2,7 @@
 # day 26
 curious	好奇心が強い
 definition	定義
-chemical	科学部室
+chemical	科学物質
 billion	10億
 cell	細胞
 frightened	怯えた
@@ -28,7 +28,7 @@ determine	明らかにする
 # day 28
 pretend	装う
 mean	意味する
-sign	調光
+sign	兆候
 regard	見なす
 close	接近した
 desire	望む
