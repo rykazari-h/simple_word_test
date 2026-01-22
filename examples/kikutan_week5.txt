@@ -1,6 +1,6 @@
 # week 5
 # day 21
-origin	機嫌
+origin	起源
 climate	気候
 vary	違う([語法]from)
 seed	種
