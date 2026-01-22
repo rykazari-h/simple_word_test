@@ -62,5 +62,5 @@ broadcast	放送する
 moreover	さらに
 domestic	国内の
 overseas	海外に(副詞)
-income	所得(加算)
+income	所得(可算)
 fee	料金
