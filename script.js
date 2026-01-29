@@ -18,7 +18,9 @@ const examples = [
 	"kikutan_week3.txt",
 	"kikutan_week4.txt",
 	"kikutan_week5.txt",
-	"kikutan_week6.txt"
+	"kikutan_week6.txt",
+	"kikutan_week7.txt",
+	"kikutan_week8.txt"
 ];
 const fileCells = document.getElementById("fileCells");
 const addCellBtn = document.getElementById("addCell");

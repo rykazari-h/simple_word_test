@@ -1,0 +1,67 @@
+# week 7
+# day 31
+marvelous	素晴らしい
+ancient	古代の
+figure	数
+planet	惑星
+theory	理論
+aid	救助
+note	注意する
+extremely	極めて
+unlikely	起こりそうもない
+advertisement	広告
+engineering	工学
+cosmos	宇宙
+# day 32
+interest	利子
+education	教育
+class	階級
+majority	大多数
+constant	一定の
+technology	科学技術
+firm	硬い
+shortage	不足
+intelligent	頭の良い
+patient	辛抱強い
+cover	扱う
+stare	じっと見つめる
+gaze	じっと見つめる
+# day 33
+distant	遠い
+view	意見
+delight	大喜び
+wonder	だろうかと思う
+possibility	可能性
+exist	存在する
+equipment	備品
+explore	探検する
+soil	土
+signal	信号
+proof	証拠
+disappointed	失望した
+# day 34
+trust	信用
+occupy	占有する
+probably	おそらく
+operate	操作する
+benefit	利益
+progress	進歩
+broad	広い
+purpose	目的
+include	含む
+advance	前進する
+measure	測る
+propose	提案する
+# day 35
+author	著者
+structure	構造
+brief	短時間の
+paragraph	段落
+expand	拡大する
+demonstrate	証明する
+consider	熟考する
+angle	角度
+feature	特徴
+dull	面白くない
+request	願う
+editor	編集者
